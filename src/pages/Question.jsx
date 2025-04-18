@@ -21,8 +21,14 @@ const Wrapper = styled.div`
 `;
 
 const Title = styled.div`
-  font-size: 2.5rem;
+  font-size: 2.8rem;
+  word-break: keep-all;
+  text-align: center;
+  margin: 0 30px;
   margin-bottom: 30px;
+  @media screen and (max-width: 780px) {
+    font-size: 2.2rem;
+  }
 `;
 
 const ButtonGroup = styled.div`
@@ -32,6 +38,18 @@ const ButtonGroup = styled.div`
     width: 350px;
     height: 200px;
     font-size: 2rem;
+    word-break: keep-all;
+  }
+  @media screen and (max-width: 780px) {
+    flex-direction: column;
+    width: 100%;
+    padding: 0 30px;
+    & > button {
+      font-size: 1.9rem;
+      width: 100%;
+      height: 150px;
+      padding: 15px;
+    }
   }
 `;
 
